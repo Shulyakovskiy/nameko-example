@@ -236,9 +236,9 @@ def compute():
     subject = "API Notification"
     with ClusterRpcProxy(CONFIG) as rpc:
         # asynchronously spawning and email notification
-        rpc.mail.send.async(email, subject, msg)
+        rpc.mail.send.call_async(email, subject, msg)
         # asynchronously spawning the compute task
-        result = rpc.compute.compute.async(operation, value, other, email)
+        result = rpc.compute.compute.call_async(operation, value, other, email)
         return msg, 200
 
 app.run(debug=True)
