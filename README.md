@@ -167,6 +167,7 @@ The above should sent an email and we can also call **compute** service to test 
 ```
 
 # Calling the micro-service through the API
+![](https://habrastorage.org/webt/aa/bx/uj/aabxujuzsvmxt6uhk91szrgzkxg.png)
 
 In a different shell (or even a different server) prepare the API environment
 
