@@ -130,6 +130,8 @@ Now with the above services definition we need to run it as a Nameko RPC service
 
 ```
 (service_env)$ nameko run service --broker amqp://guest:guest@localhost
+OR
+(service_env)$ nameko run service --config config.yml
 starting services: mail, compute
 Connected to amqp://guest:**@127.0.0.1:5672//
 Connected to amqp://guest:**@127.0.0.1:5672//
